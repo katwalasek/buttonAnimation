@@ -18,7 +18,19 @@
     background-color: #FF99CC;
     text-align: center;
     padding: 12px 0 12px 0;
+    -webkit-animation-name: button;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-play-state:paused;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.button: hover {
+    -webkit-animation-play-state:running;
 }
 
 
-@-o-keyframes
+@-webkit-keyframes button {
+    0% {background-color: #FF99CC}
+    50% {background-color: #9900CC }
+    100% {background-color: #FF99CC}
+}
