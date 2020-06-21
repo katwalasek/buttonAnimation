@@ -9,28 +9,34 @@
 .button a {
     text-transform: uppercase;
     color: #660033;
-    text-decoration: none;
+    text-decoration:none;
+    font-size:large;
+   
     }
 
 .button {
-    width: 230px;
-    border-radius: 7px;
-    background-color: #FF99CC;
+    width: 250px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: deeppink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 12px 0 12px 0;
-    -webkit-animation-name: button;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-play-state:paused;
+   -webkit-animation-name: button;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-play-state: paused; 
     -webkit-animation-iteration-count: infinite;
 }
 
-.button: hover {
-    -webkit-animation-play-state:running;
+.button:hover {
+    -webkit-animation-play-state: running;
 }
 
 
 @-webkit-keyframes button {
-    0% {background-color: #FF99CC}
-    50% {background-color: #9900CC }
-    100% {background-color: #FF99CC}
+    0%{background-color:deeppink}
+    50%{background-color: palevioletred}
+    100%{background-color: deeppink}
 }
